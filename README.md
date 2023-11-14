@@ -15,7 +15,7 @@ STM32 USB COmposite Device Driver Modification
 
 ### Middlewares\Third_Party\AL94_USB_Composite\COMPOSITE\Class\HID_CUSTOM\Inc\usbd_hid_custom.h
 
-![image](https://hackmd.io/_uploads/S1ONYDgE6.png)
+![File1](assets/file1.png)![image](https://hackmd.io/_uploads/S1ONYDgE6.png)
 
 ```clike=
 #define CUSTOM_HID_STR_DESC                          "STM32 HID CUSTOM"
@@ -66,9 +66,8 @@ typedef struct _USBD_CUSTOM_HID_Itf
 ```
 
 ### Middlewares\Third_Party\AL94_USB_Composite\COMPOSITE\Class\HID_CUSTOM\Src\usbd_hid_custom.c
-
-![image](https://hackmd.io/_uploads/H1uk5PxET.png)
-![image](https://hackmd.io/_uploads/SkSPqPeNT.png)
+![File2](assets/file2.png)
+![File3](assets/file3.png)
 
 ```cpp=
 static uint8_t USBD_CUSTOM_HID_DataOut(USBD_HandleTypeDef *pdev, uint8_t epnum)
@@ -120,8 +119,8 @@ static uint8_t USBD_CUSTOM_HID_EP0_RxReady(USBD_HandleTypeDef *pdev)
 
 ### Middlewares\Third_Party\AL94_USB_Composite\COMPOSITE\App\usbd_hid_custom_if.c
 
-![image](https://hackmd.io/_uploads/SJQRswg4a.png)
-![image](https://hackmd.io/_uploads/H1FGnweVT.png)
+![File4](assets/file4.png)
+![File5](assets/file5.png)
 
 ```clike=
 static int8_t CUSTOM_HID_Init(void);
@@ -142,7 +141,7 @@ static int8_t CUSTOM_HID_OutEvent(uint8_t* state)
 
 ### Middlewares\Third_Party\AL94_USB_Composite\COMPOSITE\App\usbd_desc.c
 Just Change VID & PID
-![image](https://hackmd.io/_uploads/BJBlavlN6.png)
+![File6](assets/file6.png)
 
 ## Send & Receive HID Report
 
