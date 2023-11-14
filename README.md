@@ -1,6 +1,6 @@
-# stm32f411_composite
+# STM32 USB Composite Device Driver Test
 
-STM32 USB COmposite Device Driver Modification
+STM32 USB Composite Device Driver Modification
 
 ## Target Device
 
@@ -11,7 +11,7 @@ STM32 USB COmposite Device Driver Modification
 - IDE : Visual Studio + VisualGDB
 - USB Composite Device Driver:  [I-CUBE-USBD-Composite](https://github.com/alambe94/I-CUBE-USBD-Composite#i-cube-usbd-composite)
 
-## Driver Modification
+## Custom HID Driver Modification
 
 ### Middlewares\Third_Party\AL94_USB_Composite\COMPOSITE\Class\HID_CUSTOM\Inc\usbd_hid_custom.h
 
@@ -166,3 +166,9 @@ static int8_t CUSTOM_HID_OutEvent(uint8_t* state)
   /* USER CODE END 6 */
 }
 ```
+
+## References
+
+- [Creating Advanced STM32CubeMX-based Projects with VisualGDB](https://visualgdb.com/tutorials/arm/stm32/cube/advanced/)
+- [Use VisualGDB in Visual Studio](https://hackmd.io/@billwang168/rkrNWltBs)
+- [I-CUBE-USBD-Composite](https://github.com/alambe94/I-CUBE-USBD-Composite#i-cube-usbd-composite)
