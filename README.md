@@ -15,7 +15,7 @@ STM32 USB COmposite Device Driver Modification
 
 ### Middlewares\Third_Party\AL94_USB_Composite\COMPOSITE\Class\HID_CUSTOM\Inc\usbd_hid_custom.h
 
-![File1](assets/file1.png)![image](https://hackmd.io/_uploads/S1ONYDgE6.png)
+![File1](assets/file1.png)
 
 ```clike=
 #define CUSTOM_HID_STR_DESC                          "STM32 HID CUSTOM"
@@ -140,7 +140,9 @@ static int8_t CUSTOM_HID_OutEvent(uint8_t* state)
 ```
 
 ### Middlewares\Third_Party\AL94_USB_Composite\COMPOSITE\App\usbd_desc.c
-Just Change VID & PID
+
+**Just Change VID & PID**
+
 ![File6](assets/file6.png)
 
 ## Send & Receive HID Report
