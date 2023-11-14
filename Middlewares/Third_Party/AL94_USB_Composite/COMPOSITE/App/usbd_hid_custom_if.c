@@ -168,7 +168,7 @@ extern USBD_HandleTypeDef hUsbDevice;
 
 static int8_t CUSTOM_HID_Init(void);
 static int8_t CUSTOM_HID_DeInit(void);
-static int8_t CUSTOM_HID_OutEvent(uint8_t event_idx, uint8_t state);
+static int8_t CUSTOM_HID_OutEvent(uint8_t* state);
 
 /**
   * @}
@@ -214,11 +214,11 @@ static int8_t CUSTOM_HID_DeInit(void)
   * @param  state: Event state
   * @retval USBD_OK if all operations are OK else USBD_FAIL
   */
-static int8_t CUSTOM_HID_OutEvent(uint8_t event_idx, uint8_t state)
+static int8_t CUSTOM_HID_OutEvent(uint8_t* state)
 {
   /* USER CODE BEGIN 6 */
-  //memcpy(buffer, state, 0x40);
-  //USBD_CUSTOM_HID_SendReport(&hUsbDevice, (uint8_t *)buffer, 0x40);
+  memcpy(buffer, state, 0x40);
+  USBD_CUSTOM_HID_SendReport(&hUsbDevice, (uint8_t *)buffer, 0x40);
   return (USBD_OK);
   /* USER CODE END 6 */
 }
