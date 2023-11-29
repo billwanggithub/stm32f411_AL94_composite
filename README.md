@@ -145,6 +145,13 @@ static int8_t CUSTOM_HID_OutEvent(uint8_t* state)
 
 ![File6](assets/file6.png)
 
+## Main.c
+
+Add the following to main.c
+```clike=
+MX_USB_DEVICE_Init(); 
+```
+
 ## Send & Receive HID Report
 
 Send to Host
